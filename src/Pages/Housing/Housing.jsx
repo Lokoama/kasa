@@ -36,9 +36,9 @@ function Housing() {
                 </div>
                 <Tag />
                 <div className='Dropdown'>
-                <Dropdown item={house} title="Description" truc = "Description"/>
-                <Dropdown item={house} title="Equipments" truc = "Equipments"/>
-
+                <Dropdown item={house} title="Description" dataValue = "description"/>
+                <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
+                
                 </div>               
                 <Footer />
             </div>

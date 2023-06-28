@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import Data from '../../Data.json';
 import {useParams} from 'react-router-dom';
 
-
-
-
-
 function Carousel () {
   const { id } = useParams();
   const house = Data.find(item => item.id === id);
@@ -15,12 +11,9 @@ function Carousel () {
   const length = house.pictures.length;
   console.log ( <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>)
   
-  
-
   const handlePrevious = () => {
     setPicture(picture > 0 ? picture - 1 : picture);
 };
-
 
 const handleNext = () => {
     setPicture(picture < length - 1 ? picture + 1 : picture);

@@ -5,12 +5,12 @@ const { useState } = require("react");
 
 
 
-function Dropdown ({item, title, test}) {
+function Dropdown ({item, title, dataValue}) {
    
     const [isOpen, setIsOpen] = useState(true)
     // const { id } = useParams();
     // const house = Data.find(item => item.id === id);
-   
+    const arrayOrNot = Array.isArray(item[dataValue]) ? item[dataValue].map(equipement => <span key={equipement}>{equipement}</span>) : item[dataValue]
     if (!item) return null;
     
     return isOpen? (
@@ -18,7 +18,7 @@ function Dropdown ({item, title, test}) {
             <button onClick={() => setIsOpen(false)}>
             {title}
             </button>
-            <p>{item.test}</p>
+            {arrayOrNot}
         </div>
     ) : <div>
         <button onClick={() => setIsOpen(true)}>
