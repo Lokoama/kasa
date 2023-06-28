@@ -1,0 +1,8 @@
+.afterCaroussel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hostNamePicture {
+    display: flex;
+}

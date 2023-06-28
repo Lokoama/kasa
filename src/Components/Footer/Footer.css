@@ -1,0 +1,14 @@
+footer {
+    background-color: black;
+}
+
+.logoFooter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txtFooter {
+    color: white;
+    text-align: center;
+}

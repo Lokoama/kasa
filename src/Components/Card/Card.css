@@ -1,0 +1,14 @@
+.Card {
+    display: block;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: orange;
+    overflow: hidden;
+}
+
+.CardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}

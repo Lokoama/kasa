@@ -1,0 +1,8 @@
+.logoLink {
+    display: flex;
+    /* max-width: 1240px; */
+    height: 68px;
+    top: 40px;
+    left: 100px;
+    justify-content: space-between;
+}
