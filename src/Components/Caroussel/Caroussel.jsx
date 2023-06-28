@@ -9,14 +9,17 @@ function Carousel () {
 
   let allPictures = house.pictures;
   const length = house.pictures.length;
+  let [count, setCount] = useState(1);
   console.log ( <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>)
   
   const handlePrevious = () => {
     setPicture(picture > 0 ? picture - 1 : picture);
+    setCount(count-1)
 };
 
 const handleNext = () => {
     setPicture(picture < length - 1 ? picture + 1 : picture);
+    setCount(count+1)
 };
 
   return (
@@ -24,6 +27,7 @@ const handleNext = () => {
       <button onClick={handlePrevious} disabled={picture === 0}>Previous</button>
       <button onClick={handleNext} disabled={picture === length - 1}>Next</button>
       <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
+      <div> {count}/{length}</div>
     </div>
   );
 };

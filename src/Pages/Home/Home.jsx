@@ -4,14 +4,19 @@ import Card from '../../Components/Card/Card'
 import Footer from '../../Components/Footer/Footer'
 import './Home.css';
 import Data from '../../Data.json'
+import BannerPicture from '../../Assets/BannerPicture.png'
 
-console.log(Footer);
+
 
 function Home() {
+    
     return (
         <div>
             <Header />
-            <Banner />
+           <div>
+                <Banner picture= {BannerPicture} /> 
+                <p className='BannerTxt'>Chez vous,<span>partout et ailleur</span></p>
+           </div> 
             <div className='cardHolder'>{Data.map(item => <Card key={item.id} item={item} />)}</div>
             <Footer />
         </div>
