@@ -2,6 +2,9 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+  margin-left: auto!important;
+  margin-right: auto!important;;
 }
 
 #root {

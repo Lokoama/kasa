@@ -2,3 +2,9 @@
     position: relative;
 }
 
+.BannerPicture {
+    Width : 1240px;
+    Height :223px;
+    object-fit: cover;
+    border-radius: 10px;
+}

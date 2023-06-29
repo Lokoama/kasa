@@ -1,6 +1,11 @@
 .cardHolder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F6F6F6;
+    justify-items: center;
+    border-radius: 10px;
+    Width : 1240px;
+    margin: auto;
 }
 
 .BannerTxt {
@@ -11,5 +16,6 @@
     color: white;
     font-size: 48px;
     font-weight: 500;
-    
+    width: 705px;
 }
+

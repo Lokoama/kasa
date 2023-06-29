@@ -1,11 +1,8 @@
 .logoLink {
     display: flex;
-    height: 68px;
-    top: 40px;
-    left: 100px;
     justify-content: space-between;
-    width: 90%;
     margin: auto;
+    width: 1240px;
 }
 
 nav {
