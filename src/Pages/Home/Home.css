@@ -6,16 +6,20 @@
     border-radius: 10px;
     Width : 1240px;
     margin: auto;
+    margin-top: 50px;
 }
 
 .BannerTxt {
     position: absolute;
     top: 15%; 
     left: 50%;
-    transform: translate(-50%, -50%); 
     color: white;
     font-size: 48px;
     font-weight: 500;
     width: 705px;
+    transform: translate(-50%, -50%); 
 }
 
+.containerHome .linkAccueil {
+    text-decoration: underline;
+}

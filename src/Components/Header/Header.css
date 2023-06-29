@@ -14,7 +14,10 @@ nav {
 
 nav a:visited {
     color: var(--primary);
-    
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 .linkAccueil {

@@ -1,4 +1,5 @@
 .card {
+    transition: all ease 0.5s;
     display: block;
     width: 340px;
     height: 340px;
@@ -7,6 +8,13 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 70px;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 
 .cardImg {
@@ -17,9 +25,10 @@
 
 .cardTxt {
     position : absolute;
-    bottom: 1%;
+    bottom: 0%;
     color: white;
     font-weight: 500;
     font-size: 18px;
-    
+    margin: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }

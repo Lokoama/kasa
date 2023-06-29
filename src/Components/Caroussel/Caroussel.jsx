@@ -10,7 +10,6 @@ function Carousel () {
   let allPictures = house.pictures;
   const length = house.pictures.length;
   let [count, setCount] = useState(1);
-  console.log ( <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>)
   
   const handlePrevious = () => {
     setPicture(picture > 0 ? picture - 1 : picture);

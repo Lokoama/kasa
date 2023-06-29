@@ -1,6 +1,10 @@
 // import Data from '../Data.json'
 // import {useParams} from 'react-router-dom';
+import VectorUp from '../Assets/VectorUp.png'
+import VectorDown from '../Assets/VectorDown.png'
+import './Dropdown.css'
 const { useState } = require("react");
+
 
 
 
@@ -14,15 +18,19 @@ function Dropdown ({item, title, dataValue}) {
     if (!item) return null;
     
     return isOpen? (
-        <div>
-            <button onClick={() => setIsOpen(false)}>
+        <div className="dropdown">
+            <button onClick={() => setIsOpen(false)} className='button'>
             {title}
+            <div className='vector'> <img src={VectorDown} alt="" /></div>
             </button>
-            {arrayOrNot}
+            <div className='dropdownText'>
+                {arrayOrNot}
+            </div>
         </div>
-    ) : <div>
+    ) : <div className="dropdown">
         <button onClick={() => setIsOpen(true)}>
             {title}
+            <div className='vector'> <img src= {VectorUp} alt="" /></div>
             </button>
         </div>
 }

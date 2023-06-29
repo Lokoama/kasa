@@ -1,4 +1,4 @@
-import logo from '../../Assets/Logo.png'
+import logo from '../../Assets/Logo.footer.png'
 
 import './Footer.css';
 
