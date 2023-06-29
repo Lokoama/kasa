@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home';
 import Error404 from './Pages/Error404/Error404';
 import About from './Pages/About/About';
 import Housing from './Pages/Housing/Housing';
+import "./App.css"
 
 function App() {
   return (

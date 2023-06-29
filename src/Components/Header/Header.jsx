@@ -6,10 +6,10 @@ function Header() {
     return (
         <div className= "logoLink">
            <Link to="/">  <img className ="logo" src={logo} alt="logo" /> </Link>
-            <div>
+            <nav>
                 <Link className='linkAccueil' to="/">Accueil</Link>
                 <Link className='linkAbout' to="/about">A Propos</Link>
-            </div>
+            </nav>
         </div>
     )
 }

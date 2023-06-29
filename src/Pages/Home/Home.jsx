@@ -15,7 +15,7 @@ function Home() {
             <Header />
            <div>
                 <Banner picture= {BannerPicture} /> 
-                <p className='BannerTxt'>Chez vous,<span>partout et ailleur</span></p>
+                <p className='BannerTxt'>Chez vous, <span>partout et ailleur</span></p>
            </div> 
             <div className='cardHolder'>{Data.map(item => <Card key={item.id} item={item} />)}</div>
             <Footer />

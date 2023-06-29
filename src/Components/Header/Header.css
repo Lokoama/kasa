@@ -1,8 +1,29 @@
 .logoLink {
     display: flex;
-    /* max-width: 1240px; */
     height: 68px;
     top: 40px;
     left: 100px;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    color : var(--primary);
+    text-decoration: none;
+    margin: auto 0;
+    font-size: 24px;
+}
+
+nav a:visited {
+    color: var(--primary);
+    
+}
+
+.linkAccueil {
+    padding-right: 60px;
+}
+
+a {
+    text-decoration: none;
 }
