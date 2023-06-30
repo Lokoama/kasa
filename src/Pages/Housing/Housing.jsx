@@ -9,11 +9,25 @@ import Caroussel from '../../Components/Caroussel/Caroussel'
 import VectorLeft from '../../Assets/VectorLeft.png'
 import VectorRight from '../../Assets/VectorRight.png'
 import './Housing.css'
+import Error404 from '../../Pages/Error404/Error404'
+const { useState } = require("react");
 
 
 function Housing() {
+
+    
     const { id } = useParams();
     const house = Data.find(item => item.id === id);
+    const [isValid, setIsValid] = useState(true);
+
+    useEffect( () => {
+        setIsValid(!house);
+    }, [id]);
+
+    if (!isValid) {
+        return <Error404 />
+    }
+
     return (
         <div className='housingContainer'>
             < Header />
