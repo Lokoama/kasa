@@ -28,7 +28,7 @@ function Dropdown ({item, title, dataValue}) {
             </div>
         </div>
     ) : <div className="dropdown">
-        <button onClick={() => setIsOpen(true)}>
+        <button onClick={() => setIsOpen(true)} className='button'>
             {title}
             <div className='vector'> <img src= {VectorUp} alt="" /></div>
             </button>

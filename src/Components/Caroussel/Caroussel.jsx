@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Data from '../../Data.json';
 import {useParams} from 'react-router-dom';
+import "./Caroussel.css"
 
 function Carousel ( {button, secondButton}) {
   const { id } = useParams();
@@ -22,13 +23,11 @@ const handleNext = () => {
 };
 
   return (
-    <div className="carousel">
-      <div className='carousselButton'>
+    <div className="caroussel">
         <button className='firstButton' onClick={handlePrevious} disabled={picture === 0}> <img src={button} alt="" /> </button>
         <button className='secondButton' onClick={handleNext} disabled={picture === length - 1}><img src={secondButton} alt="" /></button>
-      </div>
-      <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
-      <div> {count}/{length}</div>
+        <div className='count'> {count}/{length}</div>
+        <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
     </div>
   );
 };

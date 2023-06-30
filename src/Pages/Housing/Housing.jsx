@@ -22,13 +22,13 @@ function Housing() {
                 <Caroussel button = {VectorLeft} secondButton = {VectorRight} />
                 <div className='afterCaroussel'>
                     <div>
-                        <p>{house.title}</p>
-                        <p>{house.location}</p>
+                        <h2 className='titreLogement'>{house.title}</h2>
+                        <p className='lieuLogement'>{house.location}</p>
                     </div>
                     <div>
                         <div className='hostNamePicture'>
-                            <p>{house.host.name}</p>
-                            <img src={house.host.picture} alt={house.host.name} />
+                            <p className='hostName'>{house.host.name}</p>
+                            <img className='hostPicture'src={house.host.picture} alt={house.host.name} />
                         </div>
                         <div>
                             <Rating rating = {house.rating} />
@@ -36,8 +36,8 @@ function Housing() {
                     </div>
                     
                 </div>
-                <Tag />
-                <div className='Dropdown'>
+                <Tag/>
+                <div className='dropdownHousing'>
                     <Dropdown item={house} title="Description" dataValue = "description"/>
                     <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
                 </div>               
