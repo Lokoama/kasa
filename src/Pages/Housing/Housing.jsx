@@ -10,24 +10,18 @@ import VectorLeft from '../../Assets/VectorLeft.png'
 import VectorRight from '../../Assets/VectorRight.png'
 import './Housing.css'
 import Error404 from '../../Pages/Error404/Error404'
-const { useState, useEffect } = require("react");
 
 
-function Housing() {
 
-    
+function Housing({title,location,}) {
     const { id } = useParams();
     const house = Data.find(item => item.id === id);
-    const [isValid, setIsValid] = useState(!!house);
+   
 
-    useEffect( () => {
-        setIsValid(!!house);
-    }, [id, house]);
-
-    if (!isValid) {
+    if (!house) {
         return <Error404 />
     }else{
-        
+
     return (
         <div className='housingContainer'>
             < Header />
