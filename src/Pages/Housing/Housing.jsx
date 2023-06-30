@@ -10,7 +10,7 @@ import VectorLeft from '../../Assets/VectorLeft.png'
 import VectorRight from '../../Assets/VectorRight.png'
 import './Housing.css'
 import Error404 from '../../Pages/Error404/Error404'
-const { useState } = require("react");
+const { useState, useEffect } = require("react");
 
 
 function Housing() {
@@ -18,16 +18,16 @@ function Housing() {
     
     const { id } = useParams();
     const house = Data.find(item => item.id === id);
-    const [isValid, setIsValid] = useState(true);
+    const [isValid, setIsValid] = useState(!!house);
 
     useEffect( () => {
-        setIsValid(!house);
-    }, [id]);
+        setIsValid(!!house);
+    }, [id, house]);
 
     if (!isValid) {
         return <Error404 />
-    }
-
+    }else{
+        
     return (
         <div className='housingContainer'>
             < Header />
@@ -61,6 +61,7 @@ function Housing() {
     
         </div>
     )
+}
 }
 
 export default Housing

@@ -22,6 +22,13 @@ const handleNext = () => {
     setCount(count+1)
 };
 
+  if (length === 1){
+  return (
+    <div className="caroussel">
+        <div className='count'> {count}/{length}</div>
+        <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
+    </div>)}else{
+  
   return (
     <div className="caroussel">
         <button className='firstButton' onClick={handlePrevious} disabled={picture === 0}> <img src={button} alt="" /> </button>
@@ -30,6 +37,7 @@ const handleNext = () => {
         <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
     </div>
   );
+}
 };
 
 export default Carousel;
