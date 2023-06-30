@@ -6,6 +6,8 @@ import Dropdown from '../../Dropdown/Dropdown'
 import Rating from '../../Components/Rating/Rating'
 import Footer from '../../Components/Footer/Footer'
 import Caroussel from '../../Components/Caroussel/Caroussel'
+import VectorLeft from '../../Assets/VectorLeft.png'
+import VectorRight from '../../Assets/VectorRight.png'
 import './Housing.css'
 
 
@@ -13,11 +15,11 @@ function Housing() {
     const { id } = useParams();
     const house = Data.find(item => item.id === id);
     return (
-        <div>
+        <div className='housingContainer'>
             < Header />
             <div>
             <div>
-                <Caroussel/>
+                <Caroussel button = {VectorLeft} secondButton = {VectorRight} />
                 <div className='afterCaroussel'>
                     <div>
                         <p>{house.title}</p>
@@ -36,9 +38,8 @@ function Housing() {
                 </div>
                 <Tag />
                 <div className='Dropdown'>
-                <Dropdown item={house} title="Description" dataValue = "description"/>
-                <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
-                
+                    <Dropdown item={house} title="Description" dataValue = "description"/>
+                    <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
                 </div>               
                 <Footer />
             </div>

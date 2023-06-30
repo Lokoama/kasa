@@ -6,3 +6,22 @@
 .hostNamePicture {
     display: flex;
 }
+
+.CarousselImg {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.firstButton {
+    position: absolute;
+    z-index: 1;
+}
+
+.secondButton {
+    position: absolute;
+    z-index: 1;
+   
+}

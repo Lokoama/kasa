@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Data from '../../Data.json';
 import {useParams} from 'react-router-dom';
 
-function Carousel () {
+function Carousel ( {button, secondButton}) {
   const { id } = useParams();
   const house = Data.find(item => item.id === id);
   const [picture, setPicture] = useState(0);
@@ -23,8 +23,10 @@ const handleNext = () => {
 
   return (
     <div className="carousel">
-      <button onClick={handlePrevious} disabled={picture === 0}>Previous</button>
-      <button onClick={handleNext} disabled={picture === length - 1}>Next</button>
+      <div className='carousselButton'>
+        <button className='firstButton' onClick={handlePrevious} disabled={picture === 0}> <img src={button} alt="" /> </button>
+        <button className='secondButton' onClick={handleNext} disabled={picture === length - 1}><img src={secondButton} alt="" /></button>
+      </div>
       <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
       <div> {count}/{length}</div>
     </div>
