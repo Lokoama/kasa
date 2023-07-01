@@ -1,7 +1,7 @@
 import Header from '../../Components/Header/Header'
 import Banner from '../../Components/Banner/Banner'
 import Footer from '../../Components/Footer/Footer'
-import Dropdown from '../../Dropdown/Dropdown'
+import Dropdown from '../../Components/Dropdown/Dropdown'
 import BannerAbout from '../../Assets/BannerAbout.png'
 import './About.css'
 

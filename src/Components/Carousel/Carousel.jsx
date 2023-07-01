@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Data from '../../Data.json';
 import {useParams} from 'react-router-dom';
-import "./Caroussel.css"
+import "./Carousel.css"
 
 //Composant Carousel avec deux bouton qui permettent de naviguer entre les différentes images du tableau.
 
@@ -10,7 +10,7 @@ function Carousel ( {button, secondButton}) {
   const house = Data.find(item => item.id === id);
   //Variable d'état qui permet de changer le state du caroussel pour passer d'une image à une autre
   const [picture, setPicture] = useState(0);
-  let allPictures = house.pictures;
+  const allPictures = house.pictures;
   const length = house.pictures.length;
 
 

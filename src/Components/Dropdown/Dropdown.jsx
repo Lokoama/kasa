@@ -1,5 +1,5 @@
-import VectorUp from '../Assets/VectorUp.png'
-import VectorDown from '../Assets/VectorDown.png'
+import VectorUp from '../../Assets/VectorUp.png'
+import VectorDown from '../../Assets/VectorDown.png'
 import './Dropdown.css'
 const { useState } = require("react");
 

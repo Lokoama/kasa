@@ -2,10 +2,10 @@ import Data from '../../Data.json'
 import {useParams} from 'react-router-dom';
 import Header from '../../Components/Header/Header'
 import Tag from '../../Components/Tag/Tag'
-import Dropdown from '../../Dropdown/Dropdown'
+import Dropdown from '../../Components/Dropdown/Dropdown'
 import Rating from '../../Components/Rating/Rating'
 import Footer from '../../Components/Footer/Footer'
-import Caroussel from '../../Components/Caroussel/Caroussel'
+import Carousel from '../../Components/Carousel/Carousel'
 import VectorLeft from '../../Assets/VectorLeft.png'
 import VectorRight from '../../Assets/VectorRight.png'
 import './Housing.css'
@@ -27,7 +27,7 @@ function Housing({title,location,}) {
             < Header />
             <div>
             <div>
-                <Caroussel button = {VectorLeft} secondButton = {VectorRight} />
+                <Carousel button = {VectorLeft} secondButton = {VectorRight} />
                 <div className='afterCaroussel'>
                     <div>
                         <h2 className='titreLogement'>{house.title}</h2>
@@ -44,7 +44,7 @@ function Housing({title,location,}) {
                     </div>
                     
                 </div>
-                <Tag tags = {house.tags}/>
+                <Tag tag = {house.tags} />
                 <div className='dropdownHousing'>
                     <Dropdown item={house} title="Description" dataValue = "description"/>
                     <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
