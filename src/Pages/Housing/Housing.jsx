@@ -44,7 +44,7 @@ function Housing({title,location,}) {
                     </div>
                     
                 </div>
-                <Tag/>
+                <Tag tags = {house.tags}/>
                 <div className='dropdownHousing'>
                     <Dropdown item={house} title="Description" dataValue = "description"/>
                     <Dropdown item={house} title="Equipments" dataValue = "equipments"/>

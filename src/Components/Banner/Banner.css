@@ -5,8 +5,10 @@
 }
 
 .BannerPicture {
-    Width : 1240px;
+    max-width : 1240px;
+    width: 90%;
     Height :223px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 0 auto;
 }

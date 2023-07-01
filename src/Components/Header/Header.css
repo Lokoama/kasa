@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
 }
 
 nav {
@@ -10,6 +11,7 @@ nav {
     text-decoration: none;
     margin: auto 0;
     font-size: 24px;
+    font-weight: 500px;
 }
 
 nav a:visited {
@@ -26,4 +28,19 @@ nav a:hover{
 
 a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        font-size: 3vw;
+    }
+
+    .logo {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
 }

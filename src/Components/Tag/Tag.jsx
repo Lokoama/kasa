@@ -1,19 +1,16 @@
-import Data from "../../Data.json"
-import {useParams} from 'react-router-dom';
 import './Tag.css'
 
-function Tag() {
-    const { id } = useParams();
-    const house = Data.find(item => item.id === id);
+// Composant Tag qui avec la props tag permet que lorsque l'on y met un tableau de chaîne de caractère. Cette fonction permet de récupérer
+// chaque élément dans ce tableau et de créer un span pour ce dernier.
 
+function Tag({tag}) {
+    
     return (
         <div className="tag">
-            {house.tags.map((tag, index) => (
+            {tag.tags.map((tag, index) => (
             <span key = {index}> {tag} </span>
             ))}
         </div>
-       
-
     )
 }
 

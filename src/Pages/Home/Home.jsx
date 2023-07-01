@@ -13,7 +13,7 @@ function Home() {
     return (
         <div className='containerHome'>
             <Header />
-           <div>
+           <div className='containerHomeBanner'>
                 <Banner picture= {BannerPicture} /> 
                 <p className='BannerTxt'>Chez vous, <span>partout et ailleurs</span></p>
            </div> 
