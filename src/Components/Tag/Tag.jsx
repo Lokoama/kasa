@@ -4,10 +4,9 @@ import './Tag.css'
 // chaque élément dans ce tableau et de créer un span pour ce dernier.
 
 function Tag({tag}) {
-    
     return (
         <div className="tag">
-            {tag.tags.map((tag, index) => (
+            {tag.map((tag, index) => (
             <span key = {index}> {tag} </span>
             ))}
         </div>
