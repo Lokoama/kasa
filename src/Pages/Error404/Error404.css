@@ -25,3 +25,14 @@ p.oups {
     font-weight: 500;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) { 
+    h1.title {
+        font-size: 96px;
+    }
+    
+    p.oups {
+        font-size: 18px;
+    }
+    
+}

@@ -17,15 +17,17 @@ function About() {
     
 
     return (
-        <div className='containerAbout'>
-            <Header />
-            <Banner picture= {BannerAbout}/>
-            <div className='dropdownAbout'>
-                <Dropdown item={content} title="Fiabilite" dataValue = 'fiabilite' />
-                <Dropdown item={content} title="Respect" dataValue = 'respect' />
-                <Dropdown item={content} title="Service" dataValue = 'service' />
-                <Dropdown item={content} title="Securite" dataValue = 'securite' />
-                </div>          
+        <div className='appContainer'>
+            <div className='aboutContainer'>
+                <Header />
+                <Banner picture= {BannerAbout}/>
+                <div className='dropdownAbout'>
+                    <Dropdown item={content} title="Fiabilite" dataValue = 'fiabilite' />
+                    <Dropdown item={content} title="Respect" dataValue = 'respect' />
+                    <Dropdown item={content} title="Service" dataValue = 'service' />
+                    <Dropdown item={content} title="Securite" dataValue = 'securite' />
+                    </div>          
+            </div>
             <Footer />
         </div>
     )

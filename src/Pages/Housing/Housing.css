@@ -46,6 +46,8 @@
     color: var(--primary);
     font-weight: 500;
     font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
  }
 
  .lieuLogement {
@@ -68,6 +70,8 @@
     min-width: 335px;
     margin: 0 auto;
     justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px ;
  }
 
  .dropdownHousing .dropdown,   .dropdownHousing .dropdown button{
@@ -84,6 +88,8 @@
 
 .hostNamePicture {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hostName {
@@ -123,5 +129,13 @@
     .containerRating {
         margin: auto;
         margin-left:0 ;
+    }
+
+    .titreLogement {
+        font-size: 18px ;
+    }
+
+    .lieuLogement {
+        font-size: 14px;
     }
 }

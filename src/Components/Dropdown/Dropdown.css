@@ -44,4 +44,9 @@ button:hover {
     .button {
         font-size: 13px;
     }
+
+    .vector img {
+        width: 16px;
+        height: auto;
+        }
 }

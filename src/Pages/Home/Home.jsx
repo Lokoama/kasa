@@ -11,13 +11,16 @@ import BannerPicture from '../../Assets/BannerPicture.png'
 function Home() {
     
     return (
-        <div className='containerHome'>
-            <Header />
-           <div className='containerHomeBanner'>
-                <Banner picture= {BannerPicture} /> 
-                <p className='BannerTxt'>Chez vous, <span className='break'>partout et ailleurs</span></p>
-           </div> 
-            <div className='cardHolder'>{Data.map(item => <Card key={item.id} item={item} />)}</div>
+        <div className='appContainer'>
+            <div className='homeContainer'>
+                <Header />
+            <div className='containerHomeBanner'>
+                    <Banner picture= {BannerPicture} /> 
+                    <p className='BannerTxt'>Chez vous, <span className='break'>partout et ailleurs</span></p>
+            </div> 
+                <div className='cardHolder'>{Data.map(item => <Card key={item.id} item={item} />)}</div>
+                
+            </div>
             <Footer />
         </div>
     )

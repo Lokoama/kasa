@@ -3,7 +3,20 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
 
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.aboutContainer, .errorContainer, .homeContainer, .housingContainer {
+  flex: 1 0 auto;
 }
 
 #root {
@@ -14,15 +27,14 @@ body {
 @media screen and (max-width: 768px) { 
 
   body, header {
-  /* width: 90%;
-  margin: 0 auto; */
   padding-inline: 20px;
   }
 }
 
   footer {
-    padding-inline: none ;
+    padding-inline: 0 !important ;
   }
+
 * {
   /* border: red solid 1px; */
   /* overflow-x: hidden; */

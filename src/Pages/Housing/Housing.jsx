@@ -23,38 +23,37 @@ function Housing({title,location,}) {
     }else{
 
     return (
-        <div className='housingContainer'>
-            < Header />
-            <div>
-            <div>
-                <Carousel button = {VectorLeft} secondButton = {VectorRight} />
-                <div className='afterCarousel'>
+        <div className='appContainer'>
+            <div className='housingContainer'>
+                < Header />
+                <div>
                     <div>
-                        <h2 className='titreLogement'>{house.title}</h2>
-                        <p className='lieuLogement'>{house.location}</p>
-                        <Tag tag = {house.tags} />
-                    </div>
-                    <div className='hostAndRating'>
-                        <div className='hostNamePicture'>
-                            <p className='hostName'>{house.host.name}</p>
-                            <img className='hostPicture'src={house.host.picture} alt={house.host.name} />
-                        </div>
-                        <div className='containerRating'>
-                            <Rating rating = {house.rating} />
-                        </div>
+                        <Carousel button = {VectorLeft} secondButton = {VectorRight} />
+                        <div className='afterCarousel'>
+                            <div>
+                                <h2 className='titreLogement'>{house.title}</h2>
+                                <p className='lieuLogement'>{house.location}</p>
+                                <Tag tag = {house.tags} />
+                            </div>
+                            <div className='hostAndRating'>
+                                <div className='hostNamePicture'>
+                                    <p className='hostName'>{house.host.name}</p>
+                                    <img className='hostPicture'src={house.host.picture} alt={house.host.name} />
+                                </div>
+                                <div className='containerRating'>
+                                    <Rating rating = {house.rating} />
+                                </div>
                         
+                            </div>
+                         </div>
+                        <div className='dropdownHousing'>
+                            <Dropdown item={house} title="Description" dataValue = "description"/>
+                            <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
+                        </div>               
                     </div>
-                    
                 </div>
-                
-                <div className='dropdownHousing'>
-                    <Dropdown item={house} title="Description" dataValue = "description"/>
-                    <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
-                </div>               
-                
+            <Footer />
             </div>
-        </div>
-        <Footer />
         </div>
     )
 }
