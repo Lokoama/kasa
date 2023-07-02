@@ -26,5 +26,7 @@
 }
 
 .dropdownAbout .dropdown {
-    width: 1023px;
+    max-width: 1023px;
+    width: 100%;
+    min-width: 336px;
 }

@@ -35,3 +35,13 @@ button:hover {
     font-weight: 400;
     
 }
+
+@media screen and (max-width: 768px) { 
+    .dropdownText {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 13px;
+    }
+}

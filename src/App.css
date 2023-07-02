@@ -4,9 +4,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
 }
 
 #root {
   --primary: #FF6060;
+}
+
+
+@media screen and (max-width: 768px) { 
+
+  body, header {
+  /* width: 90%;
+  margin: 0 auto; */
+  padding-inline: 20px;
+  }
+}
+
+* {
+  border: red solid 1px;
+  /* overflow-x: hidden; */
 }

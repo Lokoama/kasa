@@ -9,11 +9,11 @@ import EmptyStar from '../../Assets/Unrated.png'
 // changer de position à l'avenir.
 
 function Rating({ rating }) {
-    const fullStars = Array.from({ length: rating }, () => <span> <img src= {FullStar} alt="" /></span>);
-    const emptyStars = Array.from({ length: 5 - rating }, () => <span ><img src= {EmptyStar} alt="" /></span>); 
+    const fullStars = Array.from({ length: rating }, (_, index) => <span key={index}> <img src= {FullStar} alt="" /></span>);
+    const emptyStars = Array.from({ length: 5 - rating }, (_, index) => <span key={index}><img src= {EmptyStar} alt="" /></span>); 
   
     return (
-        <div>
+        <div className='rating'>
             {fullStars}
             {emptyStars}
         </div>
@@ -23,7 +23,8 @@ function Rating({ rating }) {
 export default Rating;
 
 
+
 // {[...Array (5)].map((_, index) => {
-//     if (rating >= index) return <span> <img src= {FullStar} alt="" /></span>
-//     else return <span ><img src= {EmptyStar} alt="" /></span> 
+//     if (rating >= index) return <span key={index}> <img src= {FullStar} alt="" /></span>
+//     else return <span key={index}><img src= {EmptyStar} alt="" /></span> 
 // })  }

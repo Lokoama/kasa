@@ -6,13 +6,22 @@
     width: 100%;
 }
 
+.logoLink img {
+    height: 68px;
+    width: auto;
+}
+
 nav {
     color : var(--primary);
     text-decoration: none;
     margin: auto 0;
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
 }
+
+
+
+
 
 nav a:visited {
     color: var(--primary);
@@ -31,9 +40,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-    nav {
-        font-size: 3vw;
-    }
+   
 
     .logo {
         width: 90%;
@@ -43,4 +50,21 @@ a {
 
 @media screen and (max-width: 1024px) {
 
+    .logoLink img {
+        height: 47px;
+        width: auto;
+    }
+
+    nav {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .linkAccueil {
+        padding-right: 30px;
+    }
+    
+    .linkAbout {
+        padding-right: 20px;
+    }
 }

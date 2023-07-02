@@ -1,9 +1,16 @@
-.caroussel {
-    width: 1240px;
+.carousel {
+    max-width: 1240px;
     position: relative;
     margin: 0 auto;
 }
 
-.carousselImg {
+.carouselImg {
     border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) { 
+    .carouselImg {
+        min-width: 335px;
+        min-height: 255px;
+    }
 }

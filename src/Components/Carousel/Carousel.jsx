@@ -8,7 +8,7 @@ import "./Carousel.css"
 function Carousel ( {button, secondButton}) {
   const { id } = useParams();
   const house = Data.find(item => item.id === id);
-  //Variable d'état qui permet de changer le state du caroussel pour passer d'une image à une autre
+  //Variable d'état qui permet de changer le state du carousel pour passer d'une image à une autre
   const [picture, setPicture] = useState(0);
   const allPictures = house.pictures;
   const length = house.pictures.length;
@@ -27,22 +27,22 @@ function Carousel ( {button, secondButton}) {
 
 };
 
-//Dans le cas ou il n'y à qu'une seul image, les boutons ne sont pas affichés dans le caroussel
+//Dans le cas ou il n'y à qu'une seul image, les boutons ne sont pas affichés dans le carousel
   if (length === 1){
   return (
-    <div className="caroussel">
+    <div className="carousel">
         { <div className='count'> {picture+1}/{length}</div> }
-        <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
+        <img src  ={allPictures[picture]} alt={house.title} className = 'carouselImg'/>
     </div>)}else{
  
-//Dans le cas ou il y à plusieurs image, on peut définir les boutons du caroussel avec des images. De plus, nous avons un compteur d'image qui se base
+//Dans le cas ou il y à plusieurs image, on peut définir les boutons du carousel avec des images. De plus, nous avons un compteur d'image qui se base
 //sur la variable picture + 1 (il s'agit de l'index du tableau allPictures) par rapport a la longueur du tableau
   return (
-    <div className="caroussel">
+    <div className="carousel">
         { <button className='firstButton' onClick={handlePrevious}> <img src={button} alt="" /> </button> }
         <button className='secondButton' onClick={handleNext}> <img src={secondButton} alt="" /></button>
         { <div className='count'> {picture+1}/{length}</div> }
-        <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
+        <img src={allPictures[picture]} alt={house.title} className = 'carouselImg'/>
     </div>
   );
 }
@@ -73,11 +73,11 @@ export default Carousel;
 
 
 
-//Caroussel sans loop
+//carousel sans loop
 // import React, { useState } from 'react';
 // import Data from '../../Data.json';
 // import {useParams} from 'react-router-dom';
-// import "./Caroussel.css"
+// import "./carousel.css"
 
 // function Carousel ( {button, secondButton}) {
 //   const { id } = useParams();
@@ -100,17 +100,17 @@ export default Carousel;
 
 //   if (length === 1){
 //   return (
-//     <div className="caroussel">
+//     <div className="carousel">
 //         <div className='count'> {count}/{length}</div>
-//         <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
+//         <img src  ={allPictures[picture]} alt={house.title} className = 'carouselImg'/>
 //     </div>)}else{
   
 //   return (
-//     <div className="caroussel">
+//     <div className="carousel">
 //         { <button className='firstButton' onClick={handlePrevious} /*disabled={picture === 0}>*/ ><img src={button} alt="" /> </button> }
 //         <button className='secondButton' onClick={handleNext} /*disabled={picture === length - 1}*/><img src={secondButton} alt="" /></button>
 //         <div className='count'> {count}/{length}</div>
-//         <img src  ={allPictures[picture]} alt={house.title} className = 'CarousselImg'/>
+//         <img src  ={allPictures[picture]} alt={house.title} className = 'carouselImg'/>
 //     </div>
 //   );
 // }

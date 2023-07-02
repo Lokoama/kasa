@@ -28,23 +28,25 @@ function Housing({title,location,}) {
             <div>
             <div>
                 <Carousel button = {VectorLeft} secondButton = {VectorRight} />
-                <div className='afterCaroussel'>
+                <div className='afterCarousel'>
                     <div>
                         <h2 className='titreLogement'>{house.title}</h2>
                         <p className='lieuLogement'>{house.location}</p>
+                        <Tag tag = {house.tags} />
                     </div>
-                    <div>
+                    <div className='hostAndRating'>
                         <div className='hostNamePicture'>
                             <p className='hostName'>{house.host.name}</p>
                             <img className='hostPicture'src={house.host.picture} alt={house.host.name} />
                         </div>
-                        <div>
+                        <div className='containerRating'>
                             <Rating rating = {house.rating} />
                         </div>
+                        
                     </div>
                     
                 </div>
-                <Tag tag = {house.tags} />
+                
                 <div className='dropdownHousing'>
                     <Dropdown item={house} title="Description" dataValue = "description"/>
                     <Dropdown item={house} title="Equipments" dataValue = "equipments"/>

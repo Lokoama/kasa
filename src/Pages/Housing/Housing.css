@@ -1,20 +1,21 @@
-.afterCaroussel {
+.afterCarousel {
     display: flex;
     justify-content: space-between;
 }
 
-.afterCaroussel, .tag {
+.afterCarousel, .tag {
     margin: 0 auto;
-    width: 1240px;
+    max-width: 1240px;
+    
 }
 
 .hostNamePicture {
     display: flex;
 }
 
-.CarousselImg {
-    width: 1240px;
-    height: 415px;
+.carouselImg {
+    width: 100%;
+    max-height: 415px;
     object-fit: cover;
     z-index: 0;
 }
@@ -55,19 +56,23 @@
 
  .tag {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
  }
 
  .dropdownHousing {
     display: flex;
-    width: 1240px;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    min-width: 335px;
     margin: 0 auto;
     justify-content: space-between;
  }
 
  .dropdownHousing .dropdown,   .dropdownHousing .dropdown button{
-    width: 582px;
+    max-width: 582px;
+    width: 100%;
  }
 
 
@@ -94,3 +99,29 @@
     border-radius: 100%;
 }
 
+@media screen and (max-width: 768px) { 
+    .afterCarousel {
+        flex-direction: column;
+    }
+
+    .hostAndRating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .firstButton img, .secondButton img{
+        height: 40px;
+        width: auto;
+    }
+
+    .rating span img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .containerRating {
+        margin: auto;
+        margin-left:0 ;
+    }
+}

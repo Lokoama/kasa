@@ -1,14 +1,17 @@
 .BannerPictureTxt {
     position: relative;
     text-align: center;
-    margin: 10px;
 }
 
 .BannerPicture {
     max-width : 1240px;
-    width: 90%;
+    width: 100%;
     Height :223px;
     object-fit: cover;
     border-radius: 10px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+   
 }
