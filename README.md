@@ -1,3 +1,7 @@
+#Projet 7 de OpenClassroom pour le parcours Web Développeur
+
+Le projet Kasa est une initiation au react. Le but de ce projet et de reproduire cette maquette Figma https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?type=design&node-id=0-1&mode=design&t=8ENSVXZlQbFluBp1-0 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

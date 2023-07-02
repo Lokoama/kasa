@@ -51,10 +51,10 @@ function Housing({title,location,}) {
                     <Dropdown item={house} title="Description" dataValue = "description"/>
                     <Dropdown item={house} title="Equipments" dataValue = "equipments"/>
                 </div>               
-                <Footer />
+                
             </div>
         </div>
-    
+        <Footer />
         </div>
     )
 }

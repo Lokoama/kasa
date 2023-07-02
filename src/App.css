@@ -2,8 +2,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1440px;
   margin: 0 auto;
+
 }
 
 #root {
@@ -20,7 +20,10 @@ body {
   }
 }
 
+  footer {
+    padding-inline: none ;
+  }
 * {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   /* overflow-x: hidden; */
 }
