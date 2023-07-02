@@ -1,6 +1,6 @@
-import Header from '../../Components/Header/Header'
+
 import Banner from '../../Components/Banner/Banner'
-import Footer from '../../Components/Footer/Footer'
+
 import Dropdown from '../../Components/Dropdown/Dropdown'
 import BannerAbout from '../../Assets/BannerAbout.png'
 import './About.css'
@@ -17,9 +17,8 @@ function About() {
     
 
     return (
-        <div className='appContainer'>
+        
             <div className='aboutContainer'>
-                <Header />
                 <Banner picture= {BannerAbout}/>
                 <div className='dropdownAbout'>
                     <Dropdown item={content} title="Fiabilite" dataValue = 'fiabilite' />
@@ -27,9 +26,8 @@ function About() {
                     <Dropdown item={content} title="Service" dataValue = 'service' />
                     <Dropdown item={content} title="Securite" dataValue = 'securite' />
                     </div>          
-            </div>
-            <Footer />
-        </div>
+            </div> 
+       
     )
 }
 

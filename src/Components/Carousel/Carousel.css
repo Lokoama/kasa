@@ -2,15 +2,48 @@
     max-width: 1240px;
     position: relative;
     margin: 0 auto;
+    height: 415px;
 }
 
 .carouselImg {
     border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
 }
 
+.firstButton, .secondButton{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+}
+
+.firstButton {
+    left: 5px;
+}
+
+.secondButton {
+    right: 5px;
+}
+
+ .count {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 25px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+ }
+
 @media screen and (max-width: 768px) { 
-    .carouselImg {
-        min-width: 335px;
-        min-height: 255px;
+    .carousel {
+        height: 255px;
+    }
+    .firstButton img, .secondButton img{
+        height: 40px;
+        width: auto;
     }
 }

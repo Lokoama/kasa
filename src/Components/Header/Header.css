@@ -1,48 +1,45 @@
-.logoLink {
+header {
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    max-width: 1240px;
+    align-items: center;
+    max-width: 1440px;
+    padding: 20px 100px;
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-inline: auto;
 }
 
-.logoLink img {
-    height: 68px;
-    width: auto;
+header img {
+    max-width: 210px;
 }
 
 nav {
-    color : var(--primary);
+    color: var(--primary);
     text-decoration: none;
-    margin: auto 0;
     font-size: 24px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-
-
-
-
 
 nav a:visited {
     color: var(--primary);
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
-.linkAccueil {
-    padding-right: 60px;
-}
-
-a {
+.navlink {
     text-decoration: none;
 }
 
+.navlink.activeLink {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
-   
+
 
     .logo {
         width: 90%;
@@ -52,21 +49,22 @@ a {
 
 @media screen and (max-width: 1024px) {
 
-    .logoLink img {
-        height: 47px;
-        width: auto;
+
+    header {
+        padding: 20px;
+    }
+
+    header img {
+        max-width: 146px;
     }
 
     nav {
         font-size: 12px;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 
     .linkAccueil {
         padding-right: 30px;
-    }
-    
-    .linkAbout {
-        padding-right: 20px;
     }
 }

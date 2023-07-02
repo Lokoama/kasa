@@ -1,13 +1,11 @@
 .cardHolder {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
     background-color: #F6F6F6;
-    justify-items: center;
-    border-radius: 10px;
-    width : 100%;
-    max-width: 1240px;
-    margin: auto;
-    margin-top: 50px;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 50px;
 }
 
 .BannerTxt {
@@ -23,10 +21,6 @@
     transform: translate(-50%, -50%); 
 }
 
-.containerHome .linkAccueil {
-    text-decoration: underline;
-}
-
 .containerHomeBanner {
     position: relative;
 }
@@ -34,35 +28,21 @@
 
 @media screen and (max-width: 1024px) {
     .cardHolder {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    }
-
-    .card {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .card:hover {
-        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .BannerTxt {
         font-size: 24px;
     }
-
-
 }
 
 @media screen and (max-width: 768px) { 
-    .card {
-        min-height: 255px;
-        min-width: 335px;
-    }
 
-    .containerHomeBanner .BannerPictureTxt img {
-        height: 111px;
+    .cardHolder {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+        background: none;
+        gap: 20px;
     }
 
     .break {
@@ -71,7 +51,10 @@
 
     .BannerTxt {
         text-align: initial;
-       
     }
+
+   .containerHomeBanner .BannerPictureTxt {
+        height: 111px;
+   }
 }
 

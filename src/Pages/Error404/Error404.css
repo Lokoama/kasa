@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
 
 h1.title {
@@ -13,7 +15,7 @@ h1.title {
 }
 
 p.oups {
-    margin-bottom: 120px;
+    padding-bottom: 180px;
     color: var(--primary);
     font-size: 36px;
     font-weight: 500;
@@ -26,13 +28,18 @@ p.oups {
     text-decoration: underline;
 }
 
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
 @media screen and (max-width: 768px) { 
     h1.title {
         font-size: 96px;
     }
-    
     p.oups {
         font-size: 18px;
     }
-    
+
 }
